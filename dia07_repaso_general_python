@@ -1,0 +1,142 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Día 7 — Repaso general\n",
+        "\n",
+        "Hoy voy a repasar todo lo aprendido en los primeros 6 días.\n",
+        "\n",
+        "Objetivos:\n",
+        "- consolidar conceptos\n",
+        "- detectar dudas\n",
+        "- reforzar bases\n",
+        "- ganar seguridad\n",
+        "\n",
+        "Reto: 100 días aprendiendo a programar  \n",
+        "Día: 7/100"
+      ],
+      "metadata": {
+        "id": "E3VB8DxWAto0"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Conceptos que he aprendido\n",
+        "\n",
+        "1. print()\n",
+        "2. Variables\n",
+        "3. input()\n",
+        "4. int() y float()\n",
+        "5. Condiciones (if / else)\n",
+        "6. Listas\n",
+        "7. Diccionarios\n",
+        "8. Bucles for\n",
+        "9. Bucles while\n"
+      ],
+      "metadata": {
+        "id": "rMRPnDbNA6gi"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 2,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "qdSmqLqMAgUn",
+        "outputId": "d78a2a20-4014-44f5-f7b8-c75564816d98"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Nombre del usuario: Carla\n",
+            "Edad: 30\n",
+            "¿Está activo? (sí/no): Sí\n",
+            "¿Añadir otro usuario? (sí/no): no\n",
+            "\n",
+            "Lista de usuarios:\n",
+            "1 - Carla | Edad: 30 | Activo: sí\n"
+          ]
+        }
+      ],
+      "source": [
+        "usuarios = []\n",
+        "\n",
+        "seguir = \"sí\"\n",
+        "\n",
+        "while seguir == \"sí\":\n",
+        "    nombre = input(\"Nombre del usuario: \")\n",
+        "    edad = int(input(\"Edad: \"))\n",
+        "    activo = input(\"¿Está activo? (sí/no): \").lower()\n",
+        "\n",
+        "    usuario = {\n",
+        "        \"nombre\": nombre,\n",
+        "        \"edad\": edad,\n",
+        "        \"activo\": activo\n",
+        "    }\n",
+        "\n",
+        "    usuarios.append(usuario)\n",
+        "\n",
+        "    seguir = input(\"¿Añadir otro usuario? (sí/no): \").lower()\n",
+        "\n",
+        "print(\"\\nLista de usuarios:\")\n",
+        "\n",
+        "for i, usuario in enumerate(usuarios, start=1):\n",
+        "    print(i, \"-\", usuario[\"nombre\"], \"| Edad:\", usuario[\"edad\"], \"| Activo:\", usuario[\"activo\"])"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Reflexión de la primera semana\n",
+        "\n",
+        "En estos 7 días he aprendido:\n",
+        "\n",
+        "- a perder el miedo al código\n",
+        "- a construir pequeños proyectos\n",
+        "- a documentar mi aprendizaje\n",
+        "- a compartirlo públicamente\n",
+        "\n",
+        "Lo más difícil ha sido:\n",
+        "(…)\n",
+        "\n",
+        "Lo que mejor he entendido:\n",
+        "(…)\n",
+        "\n",
+        "Mi compromiso para la próxima semana:\n",
+        "(…)\n"
+      ],
+      "metadata": {
+        "id": "-5PYzc08CfQD"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "vBU_vpzlCf59"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
